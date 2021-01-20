@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackMagicSwitcherWebApi", "BlackMagicSwitcherWebApi\BlackMagicSwitcherWebApi.csproj", "{5E6E8950-7941-4FD5-8582-97E89A991A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackMagicSwitcherWebApiDotNetCore", "BlackMagicSwitcherWebApiDotNetCore\BlackMagicSwitcherWebApiDotNetCore.csproj", "{EEB20CDE-2581-4985-95BF-22F245BEBAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E6E8950-7941-4FD5-8582-97E89A991A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6E8950-7941-4FD5-8582-97E89A991A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6E8950-7941-4FD5-8582-97E89A991A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6E8950-7941-4FD5-8582-97E89A991A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB20CDE-2581-4985-95BF-22F245BEBAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB20CDE-2581-4985-95BF-22F245BEBAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB20CDE-2581-4985-95BF-22F245BEBAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB20CDE-2581-4985-95BF-22F245BEBAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {763DAF85-21ED-483D-AECA-9B97BFFCE987}
+	EndGlobalSection
+EndGlobal

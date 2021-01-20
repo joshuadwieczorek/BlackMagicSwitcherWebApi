@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Camera 1</title>
+</head>
+<body style="background: black">
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+
+        var pusher = new Pusher('f9cabd4c01730143d579', {
+            cluster: 'us2'
+        });
+
+        var channel = pusher.subscribe('blackmagicswitcher');
+        channel.bind('progam-switched', function (data) {
+            camera = data.camera;
+            console.log(camera);
+            if (camera.includes("Cam 1")) {
+                document.body.style.backgroundColor = "red";
+            }
+            else {
+                document.body.style.backgroundColor = "black";
+            }
+        });
+
+        channel.bind('preview-switched', function (data) {
+            camera = data.camera;
+            console.log(camera);
+            if (camera.includes("Cam 1")) {
+                document.body.style.backgroundColor = "lawngreen";
+            }
+            else {
+                document.body.style.backgroundColor = "black";
+            }
+        });
+    </script>
+</body>
